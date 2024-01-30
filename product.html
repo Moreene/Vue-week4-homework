@@ -75,9 +75,9 @@
         </div>
         <!-- Modal -->
         <!-- 新增產品 -->
-        <modal :temp-product="tempProduct" :is-new="isNew" :clear-input="clearInput" @update="getProduct"></modal>
+        <modal :temp-product="tempProduct" :is-new="isNew" :clear-input="clearInput" @update="getProduct" ref="modal"></modal>
         <!-- 刪除產品 -->
-        <del-modal :temp-product="tempProduct" @delete="getProduct"></del-modal>
+        <del-modal :temp-product="tempProduct" @delete="getProduct" ref="delModal"></del-modal>
     </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js'
